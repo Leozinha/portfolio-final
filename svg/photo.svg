@@ -1,0 +1,84 @@
+
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-107 -396.5 396.7 396.5" style="enable-background:new -107 -396.5 396.7 396.5;" xml:space="preserve">
+<style type="text/css">
+	
+		.st0{clip-path:url(#XMLID_3_);fill:none;stroke:#FFFFFF;stroke-width:9;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+
+	<defs>
+		<style>
+
+			.st0{
+				stroke-dasharray: 2000;
+				stroke-dashoffset: 0;
+
+				opacity:0;
+
+				-webkit-animation:dash ease-in 1;
+				-moz-animation:dash ease-in 1;
+				animation:dash ease-in 1;
+
+				-webkit-animation-fill-mode:forwards;
+				-moz-animation-fill-mode:forwards;
+				animation-fill-mode:forwards;
+
+				-webkit-animation-duration:3s;
+				-moz-animation-duration:3s;
+				animation-duration:3s;
+
+			}
+
+			@keyframes dash { 0% { stroke-dashoffset: 2000; opacity:0.8; } 100% { stroke-dashoffset: 0; opacity:1; } }
+			@-moz-keyframes dash { 0% { stroke-dashoffset: 2000; opacity:0.8; } 100% { stroke-dashoffset: 0; opacity:1; } }
+			@-webkit-keyframes dash { 0% { stroke-dashoffset: 2000; opacity:0.8; } 100% { stroke-dashoffset: 0; opacity:1; } }
+
+		</style>
+	</defs>
+
+</style>
+<g id="XMLID_462_">
+	<g>
+		<defs>
+			<circle id="XMLID_106_" cx="91.4" cy="-198.3" r="197.6"/>
+		</defs>
+		<clipPath id="XMLID_2_">
+			<use xlink:href="#XMLID_106_"  style="overflow:visible;"/>
+		</clipPath>
+	</g>
+	<g>
+		<defs>
+			<circle id="XMLID_91_" cx="91.4" cy="-198.3" r="197.6"/>
+		</defs>
+		<clipPath id="XMLID_3_">
+			<use xlink:href="#XMLID_91_"  style="overflow:visible;"/>
+		</clipPath>
+
+		<path id="" class="st0" d="M286-368.6c0,0,91.5,80.9,3.1,172.2S291.1-21,291.1-21"/>
+		<path id="" class="st0" d="M265.7-369.9c0,0,91.5,80.9,3.1,172.2s2.1,175.4,2.1,175.4"/>
+		<path id="" class="st0" d="M245.3-369.9c0,0,91.5,80.9,3.1,172.2s2.1,175.4,2.1,175.4"/>
+		<path id="st4-d" d="M226.4-369.9c0,0,91.5,80.9,3.1,172.2s2.1,175.4,2.1,175.4" class="st0"/>
+		<path id="st3-d" d="M203.1-369.9c0,0,91.5,80.9,3.1,172.2s2.1,175.4,2.1,175.4" class="st0"/>
+		<path id="st2-d" d="M181-380.6c0,0,97.8,86.4,3.3,184.1S186.5-9,186.5-9" class="st0"/>
+		<path id="st1-d" d="M155-395.6c0,0,104.9,92.6,3.6,197.3s2.4,201,2.4,201" class="st0"/>
+
+		<path id="" class="st0" d="M-101-368.6c0,0-91.5,80.9-3.1,172.2S-106.2-21-106.2-21"/>
+		<path id="" class="st0" d="M-80.7-369.9c0,0-91.5,80.9-3.1,172.2s-2.1,175.4-2.1,175.4"/>
+		<path id="" class="st0" d="M-60.3-369.9c0,0-91.5,80.9-3.1,172.2s-2.1,175.4-2.1,175.4"/>
+		<path id="st4-e" d="M-41.4-369.9c0,0-91.5,80.9-3.1,172.2s-2.1,175.4-2.1,175.4" class="st0"/>
+		<path id="st3-e" d="M-18.1-369.9c0,0-91.5,80.9-3.1,172.2s-2.1,175.4-2.1,175.4" class="st0"/>
+		<path id="st2-e" d="M4-380.6c0,0-97.8,86.4-3.3,184.1S-1.5-9-1.5-9" class="st0"/>
+		<path id="st1-e" d="M30-395.6c0,0-104.9,92.6-3.6,197.3s-2.4,201-2.4,201" class="st0"/>
+	</g>
+	<g>
+		<defs>
+			<circle id="XMLID_76_" cx="91.4" cy="-198.3" r="197.6"/>
+		</defs>
+		<clipPath id="XMLID_4_">
+			<use xlink:href="#XMLID_76_"  style="overflow:visible;"/>
+		</clipPath>
+	</g>
+</g>
+
+
+</svg>
+
