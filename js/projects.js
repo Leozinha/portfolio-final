@@ -46,6 +46,9 @@ document.getElementById("animal-busters").addEventListener("mouseleave", mousele
 
             .to("#menu-title-1", 0.2, { ease: Power3.easeOut,autoAlpha:1, visibility:"visible"}, "animal-busters")
             .to("#menu-title-2", 0.2, { ease: Power3.easeOut,autoAlpha:1, visibility:"visible"}, "animal-busters")
+            .to("#icon-black-left", 0.2, { ease: Power3.easeOut, paddingBottom:"0.4rem", marginRight:"0.6rem"}, "animal-busters")
+            .to("#icon-black-right", 0.2, { ease: Power3.easeOut, paddingTop:"0.4rem", marginLeft:"0.6rem"}, "animal-busters")
+
             .to("#hide-menu-1", 0.001, { ease: Power3.easeOut, display:"block", autoAlpha:1}, "animal-busters")
             .to("#img-menu-1", 0.001, { ease: Power3.easeOut, display:"none", padding:"0"}, "animal-busters")
             .to("#divider-menu", 0.5, { ease: Power3.easeOut, autoAlpha:0, visibility:"hidden", backgroundColor:"white"}, "animal-busters")

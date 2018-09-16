@@ -8,6 +8,10 @@ h1{
     margin: 0;
 }
 
+h3{
+    margin: 0;
+}
+
 a{
     text-decoration: none;
     color: inherit;
@@ -105,6 +109,74 @@ a{
     font-family: 'Quicksand', sans-serif;
 }
 
+.main-title{
+    align-items: center;
+    text-align: center;
+    width: 12%;
+    height: 59%;
+    position: absolute;
+}
+
+.main-title-details{
+    font-weight: 900;
+    font-size: 1.5rem;
+    opacity: 0.35;
+}
+
+.main-title-details-menu{
+    font-weight: 900;
+}
+
+.main-title-letters{
+    border: 2px solid rgba(0, 0, 0,0.35);
+    width: 44%;
+}
+
+.main-title-letters-details{
+    padding: 2rem 0 2rem 0;
+    opacity: 0.35;
+    font-size: 2rem;
+    background-color: transparent;
+    transition: all 0.6s ease-out;
+}
+
+.main-title-letters-details:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    opacity: 1;
+    background-color: #FFFFFF;
+}
+
+.total-number{
+    font-size: 1.4rem;
+}
+
+.main-title-letters-item{
+    margin: 0.3rem;
+}
+
+.main-number{
+    opacity: 1;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.divider-nr-pages{
+    width: 13%;
+    border: 1.5px solid black;
+    margin: 1.2rem 0 1.2rem 0;
+    opacity: 0.35;
+    transform: rotate(90deg);
+}
+
+.pagination{
+    align-items: center;
+    text-align: center;
+    width: 12%;
+    height: 59%;
+    position: absolute;
+    right: 0;
+}
+
 /* pages */
 
 #menu-letter{
@@ -120,6 +192,7 @@ a{
     background: linear-gradient(to top , rgb(97,144,232) , rgb(165,190,232));
     overflow-y: hidden;
     overflow-x: hidden;
+    /*filter: blur(5px);*/
 }
 .welcome-page{
     display: block;
@@ -129,6 +202,7 @@ a{
 .skills{
     display: none;
     opacity: 0;
+    z-index: 0;
 }
 
 .menu-content{
@@ -144,6 +218,52 @@ a{
     margin: 0 0.5rem 0 0.5rem;
     border-radius: 4.2px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.menu-img{
+    position: absolute;
+    align-items: center;
+    width: 5.6%;
+    margin-top: -0.1rem;
+}
+
+.menu-skills{
+    align-items: center;
+    text-align: center;
+    width: 12%;
+    height: 59%;
+    padding-top: 13.5rem;
+}
+
+.menu-background-color{
+    visibility: hidden;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.70;
+    background-color: rgb(97,144,232);
+}
+
+.background-menu{
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+
+.blur-background{
+    height: 100%;
+}
+
+.icon-menu-close{
+    visibility: hidden;
+    opacity: 0;
+    width: 41%;
+    position: absolute;
 }
 
 .icon-black-left{
@@ -177,6 +297,7 @@ a{
     border-top-left-radius: 70px;
     width: 3%;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    z-index: 1;
 }
 
 .icon-white-position{
@@ -192,6 +313,7 @@ a{
     border-top-right-radius: 70px;
     width: 3%;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    z-index: 1;
 }
 
 .icon-white2-position{
@@ -202,8 +324,8 @@ a{
 }
 
 .icon-menu{
+    visibility: visible;
     width: 50%;
-    height: 50%;
 }
 
 .icon-rotate{
@@ -379,6 +501,7 @@ a{
 .projects{
     display: none;
     opacity: 0;
+    z-index: 0;
 }
 
 .projects-menu{
@@ -535,6 +658,7 @@ a{
 .contact{
     display: none;
     opacity: 0;
+    z-index: 0;
 }
 
 .contact-img{
@@ -656,6 +780,10 @@ a{
 }
 
 /* VIDEOS */
+
+.email-me:focus{
+    outline: 0;
+}
 
 /* MEDIA QUERIES */
 
@@ -1065,6 +1193,25 @@ a{
     }
 
     /* PROJECTS */
+
+    /* MENU */
+
+    .menu-img{
+        width: 7.6%;
+        margin-top: -0.3rem;
+    }
+
+    .icon-menu-close{
+        width: 41%;
+    }
+
+    .main-title-letters-details{
+        font-size: 1.5rem;
+    }
+
+    /* MENU */
+
+
 
 }
 

@@ -179,3 +179,19 @@ document.getElementById("contact").addEventListener('wheel', function(e) {
 
 });
 
+//menu
+/*
+document.getElementById("animal-busters").addEventListener('mouseenter', function() {
+
+    var t1 = new TimelineLite();
+
+    t1
+        .to("#icon-white-top", 2.1, { ease: Power4.easeOut, top: "85%"}, "icon-white-top")
+        .to("#icon-white-bottom", 2.1, {ease: Power4.easeOut, bottom: "85%"}, "icon-white-top")
+        .to("#contact", 0.3, { ease: Power3.easeOut, autoAlpha:0, display: "none"}, "icon-white-top")
+        .to("#projects", 0.5, { ease: Power3.easeOut, autoAlpha:1, display: "block", delay: 0.3}, "icon-white-top")
+
+    ;
+
+});*/
+
