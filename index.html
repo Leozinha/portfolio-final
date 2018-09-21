@@ -6,7 +6,8 @@
 
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
@@ -76,13 +77,13 @@
                         <span id="menu-letter" class="font-quick font600 menu-font-size">F</span>
                         <img id="icon-black-right" src="imgs/black.png" class="icon-black-right icon-rotate">
                     </div>
-                    <img id="img-menu-1" src="imgs/menu.png" class="icon-menu">
+                    <img id="img-menu-1" src="imgs/close.png" class="icon-menu-1">
                 </div>
 
                 <hr id="divider-menu" class="divider-menu">
 
                 <div class="menu-img flex">
-                    <img id="img-menu" onclick="changeColor()" src="imgs/menu.png" class="icon-menu">
+                    <img id="img-menu" src="imgs/menu.png" class="icon-menu">
                     <img id="img-menu-close" onclick="changeColorClose()" src="imgs/close.png" class="icon-menu-close">
                 </div>
 
@@ -119,7 +120,7 @@
             <h1 class="font800 welcome-title">WELCOME</h1>
             <hr class="divider">
 
-            <span class="font500 welcome-description">I'm Eleonor and <br> if you want to
+            <span class="font400 welcome-description">I'm Eleonor and <br> if you want to
                 <img id="icon-white-left" src="imgs/white.png" class="icon-white-left">
                 <span id="word-animation"></span>
                 <img id="icon-white-right" src="imgs/white.png" class="icon-white-right icon-rotate">
@@ -140,11 +141,11 @@
         <span class="flex-column">
             <span class="title">FRONT-END</span>
             <span class="percentage-number number-2">60%</span>
-            <span class="skills-sub-title">HTML + CSS + JS</span>
+            <span class="skills-sub-title">HTML + CSS + JS + React</span>
         </span>
         <span class="skills-title-end flex-column">
             <span class="title">BACK-END</span>
-            <span class="percentage-number number-3">30%</span>
+            <span class="percentage-number number-3">40%</span>
             <span class="skills-sub-title">PHP</span>
         </span>
     </div>
@@ -181,10 +182,10 @@
 
         <div id="education" class="education flex-column">
             <span class="font800 sizeL">EDUCATION</span>
-            <span class="font600">BACHELOR'S DEGREE</span>
-            <span class="font600">NEW TECNOLOGIES OF COMMUNICATION</span>
-            <span class="font600">UNIVERSITY OF AVEIRO, PORTUGAL</span>
-            <span class="font600">2014 - 2018</span>
+            <span class="font400">BACHELOR'S DEGREE</span>
+            <span class="font400">NEW TECNOLOGIES OF COMMUNICATION</span>
+            <span class="font400">UNIVERSITY OF AVEIRO, PORTUGAL</span>
+            <span class="font400">2014 - 2018</span>
         </div>
 
         <div class="divider-degree"></div>
@@ -252,8 +253,6 @@
 
         <div id="projects-menu" class="projects-menu">
 
-
-
             <div class="projects-items flex-row">
 
 
@@ -266,7 +265,7 @@
 
                     <img id="animal-busters-img" src="imgs/busters.png" class="busters-img">
 
-                    <p id="animal-busters-p" class="animal-busters-p span-cursor font600">
+                    <p id="animal-busters-p" class="animal-busters-p span-cursor font400">
                         ola nao sabes o quao quero isto nao posso d f a diia dd ff e eee rrr  ttt eeww ddd a dds adaad dad aas
                         ola nao sabes o quao quero isto nao posso d f a diia dd ff e eee rrr  ttt eeww ddd a dds adaad dad aas</p>
 
@@ -350,7 +349,7 @@
 
         <div id="background-video" class="flex background-video">
             <video id="animal-busters-video" class="video video-animal-busters">
-                <source src="imgs/videos/animal_busters.mp4" type="video/mp4">
+                <source src="https://www.dropbox.com/s/bbe65gkdx91lthn/animal_busters.mp4?raw=1" type="video/mp4">
             </video>
         </div>
 
@@ -416,7 +415,9 @@
             </div>
 
             <div id="contact-link" class="flex-column contact-link">
-                <a class="email-me" href="mailto:eleonorsilva123@gmail.com"><span id="contact-link-span" class="contact-link-span">contact me</span></a>
+                <div id="expand-email">
+                    <a class="email-me" href="mailto:eleonorsilva123@gmail.com"><span id="contact-link-span" class="contact-link-span">contact me</span></a>
+                </div>
                 <hr id="line1" class="contact-link-line line1">
                 <hr id="line2" class="contact-link-line line2">
                 <hr id="line3" class="contact-link-line line3">

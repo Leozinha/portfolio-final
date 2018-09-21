@@ -58,6 +58,7 @@ document.getElementById("contact-link-span").addEventListener('mouseenter', func
         .to("#line1", 0.5, {ease: Power3.easeOut, autoAlpha:1, delay: 0.8}, "st1-d2")
         .to("#contact-link-span", 0.8, {ease: Power3.easeOut, fontSize:"2.2rem",autoAlpha:1, delay:1.1}, "st1-d2")
 
+        .to("#expand-email", 0.8, {ease: Power3.easeOut, marginBottom:"0.4rem", delay:1.1}, "st1-d2")
         .to("#contact-insta", 0.8, {ease: Power3.easeOut, padding:"0.1rem", delay:1.1}, "st1-d2")
         .to("#contact-facebook", 0.8, {ease: Power3.easeOut, padding:"0.1rem", delay:1.1}, "st1-d2")
 

@@ -2,8 +2,8 @@
 
 TweenLite.defaultEase = Sine.easeInOut;
 TweenLite.set("#wave-1", { y: "90px",x:"-200px" });
-TweenLite.set("#wave-2", { y: "75px",x:"-200px" });
-TweenLite.set("#wave-3", { y: "100px",x:"-200px" });
+TweenLite.set("#wave-2", { y: "73px",x:"-200px" });
+TweenLite.set("#wave-3", { y: "85px",x:"-200px" });
 
 var svg   = document.querySelector("svg");
 var wave  = document.querySelector("#wave");

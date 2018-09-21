@@ -1,4 +1,6 @@
 
+//TODO: colocar titulo e paginaçao; desktop size responsive;
+
 //welcome page - skills
 document.getElementById("welcome-page").addEventListener('wheel', function(e) {
 

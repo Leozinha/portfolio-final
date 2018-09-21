@@ -3,6 +3,8 @@
 document.getElementById("animal-busters").addEventListener("mouseenter", mouseenter_animal);
 document.getElementById("animal-busters").addEventListener("mouseleave", mouseleave_animal);
 
+document.getElementById("img-menu").addEventListener("click", changeColor);
+
     function mouseenter_animal() {
         var tl = new TimelineLite();
 
@@ -10,8 +12,8 @@ document.getElementById("animal-busters").addEventListener("mouseleave", mousele
             .to("#animal-busters-img", 0.5, { ease: Power3.easeOut, autoAlpha:0}, "animal-busters-img")
             .to("#animal-busters", 0.5, { ease: Power3.easeOut, backgroundColor:"#0173c3", borderColor: "#0173c3"}, "animal-busters-img")
             .to("#animal-busters-keywords", 1, { ease: Power3.easeOut, zIndex: 1,autoAlpha:1,color: "white", delay:0.3}, "animal-busters-img")
-            .to("#animal-busters-keywords-item1", 1.2, { ease: Power3.easeOut, paddingBottom:"0.6rem", delay:0.2}, "animal-busters-img")
-            .to("#animal-busters-keywords-item2", 1.2, { ease: Power3.easeOut, paddingTop:"0.6rem", delay:0.2}, "animal-busters-img")
+            .to("#animal-busters-keywords-item1", 0.8, { ease: Power3.easeOut, paddingBottom:"0.6rem", delay:0.2}, "animal-busters-img")
+            .to("#animal-busters-keywords-item2", 0.8, { ease: Power3.easeOut, paddingTop:"0.6rem", delay:0.2}, "animal-busters-img")
 
         ;
     }
@@ -22,9 +24,9 @@ document.getElementById("animal-busters").addEventListener("mouseleave", mousele
         tl
             .to("#animal-busters-img", 1, { ease: Power3.easeOut, autoAlpha:1, delay: 0.2}, "animal-busters-img")
             .to("#animal-busters", 1, { ease: Power3.easeOut, backgroundColor:"white", borderColor: "white"}, "animal-busters-img")
-            .to("#animal-busters-keywords", 0.8, { ease: Power3.easeOut,autoAlpha:0}, "animal-busters-img")
-            .to("#animal-busters-keywords-item1", 1.2, { ease: Power3.easeOut, paddingBottom:"5.5rem"}, "animal-busters-img")
-            .to("#animal-busters-keywords-item2", 1.2, { ease: Power3.easeOut, paddingTop:"5.5rem"}, "animal-busters-img")
+            .to("#animal-busters-keywords", 0.8, { ease: Power3.easeOut,autoAlpha:0}, "animal-busters-keywords")
+            .to("#animal-busters-keywords-item1", 0.8, { ease: Power3.easeOut, paddingBottom:"5.5rem"}, "animal-busters-keywords")
+            .to("#animal-busters-keywords-item2", 0.8, { ease: Power3.easeOut, paddingTop:"5.5rem"}, "animal-busters-keywords")
 
         ;
     }
@@ -73,6 +75,9 @@ document.getElementById("animal-busters").addEventListener("mouseleave", mousele
         document.getElementById("animal-busters").addEventListener("mouseenter", mouseenter_animal);
         document.getElementById("animal-busters").addEventListener("mouseleave", mouseleave_animal);
 
+        document.getElementById("img-menu").addEventListener("click", changeColor);
+        document.getElementById("img-menu").removeEventListener("click", hide_animal);
+
     }
 
     function hide_animal() {
@@ -88,6 +93,8 @@ document.getElementById("animal-busters").addEventListener("mouseleave", mousele
         document.getElementById("img-menu").removeEventListener("click", hide_animal);
         document.getElementById("img-menu").addEventListener("click", show_animal);
 
+        document.getElementById("img-menu-1").removeEventListener("click", close_animal);
+
     }
 
     function show_animal() {
@@ -102,6 +109,9 @@ document.getElementById("animal-busters").addEventListener("mouseleave", mousele
 
         document.getElementById("img-menu").removeEventListener("click", show_animal);
         document.getElementById("img-menu").addEventListener("click", hide_animal);
+
+        document.getElementById("img-menu-1").addEventListener("click", close_animal);
+
 
     }
 
@@ -176,6 +186,9 @@ function close_films() {
     document.getElementById("films").addEventListener("mouseenter", mouseenter_films);
     document.getElementById("films").addEventListener("mouseleave", mouseleave_films);
 
+    document.getElementById("img-menu").addEventListener("click", changeColor);
+    document.getElementById("img-menu").removeEventListener("click", hide_animal);
+
 }
 
 function hide_films() {
@@ -191,6 +204,9 @@ function hide_films() {
     document.getElementById("img-menu").removeEventListener("click", hide_films);
     document.getElementById("img-menu").addEventListener("click", show_films);
 
+    document.getElementById("img-menu-1").removeEventListener("click", close_films);
+
+
 }
 
 function show_films() {
@@ -205,6 +221,9 @@ function show_films() {
 
     document.getElementById("img-menu").removeEventListener("click", show_films);
     document.getElementById("img-menu").addEventListener("click", hide_films);
+
+    document.getElementById("img-menu-1").addEventListener("click", close_films);
+
 
 }
 
@@ -281,6 +300,9 @@ function close_bioliving() {
     document.getElementById("bioliving").addEventListener("mouseenter", mouseenter_bioliving);
     document.getElementById("bioliving").addEventListener("mouseleave", mouseleave_bioliving);
 
+    document.getElementById("img-menu").addEventListener("click", changeColor);
+    document.getElementById("img-menu").removeEventListener("click", hide_animal);
+
 }
 
 function hide_bioliving() {
@@ -297,6 +319,8 @@ function hide_bioliving() {
     document.getElementById("img-menu").removeEventListener("click", hide_bioliving);
     document.getElementById("img-menu").addEventListener("click", show_bioliving);
 
+    document.getElementById("img-menu-1").removeEventListener("click", close_bioliving);
+
 }
 
 function show_bioliving() {
@@ -312,6 +336,9 @@ function show_bioliving() {
 
     document.getElementById("img-menu").removeEventListener("click", show_bioliving);
     document.getElementById("img-menu").addEventListener("click", hide_bioliving);
+
+    document.getElementById("img-menu-1").addEventListener("click", close_bioliving);
+
 
 }
 
@@ -386,6 +413,9 @@ function close_cubo() {
     document.getElementById("cubo").addEventListener("mouseenter", mouseenter_cubo);
     document.getElementById("cubo").addEventListener("mouseleave", mouseleave_cubo);
 
+    document.getElementById("img-menu").addEventListener("click", changeColor);
+    document.getElementById("img-menu").removeEventListener("click", hide_animal);
+
 }
 
 function hide_cubo() {
@@ -401,6 +431,8 @@ function hide_cubo() {
 
     document.getElementById("img-menu").removeEventListener("click", hide_cubo);
     document.getElementById("img-menu").addEventListener("click", show_cubo);
+
+    document.getElementById("img-menu-1").removeEventListener("click", close_cubo);
 
 }
 
@@ -418,6 +450,8 @@ function show_cubo() {
     document.getElementById("img-menu").removeEventListener("click", show_cubo);
     document.getElementById("img-menu").addEventListener("click", hide_cubo);
 
+    document.getElementById("img-menu-1").addEventListener("click", close_cubo);
+
 }
 
 
@@ -429,6 +463,7 @@ document.getElementById("animal-busters").addEventListener('click', function() {
 
     document.getElementById("animal-busters").removeEventListener("mouseenter", mouseenter_animal);
     document.getElementById("animal-busters").removeEventListener("mouseleave", mouseleave_animal);
+    document.getElementById("img-menu").removeEventListener("click", changeColor);
 
     document.getElementById("img-menu-1").addEventListener("click", close_animal);
     document.getElementById("img-menu").addEventListener("click", hide_animal);
@@ -453,7 +488,10 @@ document.getElementById("animal-busters").addEventListener('click', function() {
         .to("#menu-title-1", 0.2, { ease: Power3.easeOut,autoAlpha:0, visibility:"hidden"}, "animal-busters")
         .to("#menu-title-2", 0.2, { ease: Power3.easeOut,autoAlpha:0, visibility:"hidden"}, "animal-busters")
         .to("#hide-menu-1", 0.001, { ease: Power3.easeOut, display:"none", autoAlpha:0}, "animal-busters")
-        .to("#img-menu-1", 0.5, { ease: Power3.easeOut, display:"block", padding:"1rem"}, "animal-busters")
+        .to("#img-menu-1", 0.5, { ease: Power3.easeOut, display:"block", padding:"0.8rem"}, "animal-busters")
+
+        .to("#img-menu", 0.5, { ease: Power3.easeOut, src:"../imgs/busters_blue.png"}, "animal-busters")
+
         .to("#divider-menu", 0.5, { ease: Power3.easeOut, autoAlpha:1, visibility:"visible", backgroundColor:"white"}, "animal-busters")
         .to("#img-menu", 0.5, { ease: Power3.easeOut, src:"../imgs/menu.png", padding:"0.8rem"}, "animal-busters")
         .to("#menu-background", 0.8, { ease: Power3.easeOut, backgroundColor:"#0173c3"}, "animal-busters")
@@ -474,6 +512,8 @@ document.getElementById("films").addEventListener('click', function() {
 
     document.getElementById("films").removeEventListener("mouseenter", mouseenter_films);
     document.getElementById("films").removeEventListener("mouseleave", mouseleave_films);
+    document.getElementById("img-menu").removeEventListener("click", changeColor);
+
 
     document.getElementById("img-menu-1").addEventListener("click", close_films);
     document.getElementById("img-menu").addEventListener("click", hide_films);
@@ -495,7 +535,7 @@ document.getElementById("films").addEventListener('click', function() {
         .to("#menu-title-1", 0.2, { ease: Power3.easeOut,autoAlpha:0, visibility:"hidden"}, "films")
         .to("#menu-title-2", 0.2, { ease: Power3.easeOut,autoAlpha:0, visibility:"hidden"}, "films")
         .to("#hide-menu-1", 0.001, { ease: Power3.easeOut, display:"none", autoAlpha:0}, "films")
-        .to("#img-menu-1", 0.5, { ease: Power3.easeOut, display:"block", padding:"1rem"}, "films")
+        .to("#img-menu-1", 0.5, { ease: Power3.easeOut, display:"block", padding:"0.8rem"}, "films")
         .to("#divider-menu", 0.5, { ease: Power3.easeOut, autoAlpha:1, visibility:"visible", backgroundColor:"white"}, "films")
         .to("#img-menu", 0.5, { ease: Power3.easeOut, src:"../imgs/menu.png", padding:"0.8rem"}, "films")
         .to("#menu-background", 0.8, { ease: Power3.easeOut, backgroundColor:"black"}, "films")
@@ -517,6 +557,8 @@ document.getElementById("bioliving").addEventListener('click', function() {
 
     document.getElementById("bioliving").removeEventListener("mouseenter", mouseenter_bioliving);
     document.getElementById("bioliving").removeEventListener("mouseleave", mouseleave_bioliving);
+    document.getElementById("img-menu").removeEventListener("click", changeColor);
+
 
     document.getElementById("img-menu-1").addEventListener("click", close_bioliving);
     document.getElementById("img-menu").addEventListener("click", hide_bioliving);
@@ -539,7 +581,7 @@ document.getElementById("bioliving").addEventListener('click', function() {
         .to("#menu-title-1", 0.2, { ease: Power3.easeOut,autoAlpha:0, visibility:"hidden"}, "bioliving")
         .to("#menu-title-2", 0.2, { ease: Power3.easeOut,autoAlpha:0, visibility:"hidden"}, "bioliving")
         .to("#hide-menu-1", 0.001, { ease: Power3.easeOut, display:"none", autoAlpha:0}, "bioliving")
-        .to("#img-menu-1", 0.5, { ease: Power3.easeOut, display:"block", padding:"1rem"}, "bioliving")
+        .to("#img-menu-1", 0.5, { ease: Power3.easeOut, display:"block", padding:"0.8rem"}, "bioliving")
         .to("#divider-menu", 0.5, { ease: Power3.easeOut, autoAlpha:1, visibility:"visible", backgroundColor:"white"}, "bioliving")
         .to("#img-menu", 0.5, { ease: Power3.easeOut, src:"../imgs/menu.png", padding:"0.8rem"}, "bioliving")
         .to("#menu-background", 0.8, { ease: Power3.easeOut, backgroundColor:"#73B219"}, "bioliving")
@@ -560,6 +602,8 @@ document.getElementById("cubo").addEventListener('click', function() {
 
     document.getElementById("cubo").removeEventListener("mouseenter", mouseenter_cubo);
     document.getElementById("cubo").removeEventListener("mouseleave", mouseleave_cubo);
+    document.getElementById("img-menu").removeEventListener("click", changeColor);
+
 
     document.getElementById("img-menu-1").addEventListener("click", close_cubo);
     document.getElementById("img-menu").addEventListener("click", hide_cubo);
@@ -582,7 +626,7 @@ document.getElementById("cubo").addEventListener('click', function() {
         .to("#menu-title-1", 0.2, { ease: Power3.easeOut,autoAlpha:0, visibility:"hidden"}, "cubo")
         .to("#menu-title-2", 0.2, { ease: Power3.easeOut,autoAlpha:0, visibility:"hidden"}, "cubo")
         .to("#hide-menu-1", 0.001, { ease: Power3.easeOut, display:"none", autoAlpha:0}, "cubo")
-        .to("#img-menu-1", 0.5, { ease: Power3.easeOut, display:"block", padding:"1rem"}, "cubo")
+        .to("#img-menu-1", 0.5, { ease: Power3.easeOut, display:"block", padding:"0.8rem"}, "cubo")
         .to("#divider-menu", 0.5, { ease: Power3.easeOut, autoAlpha:1, visibility:"visible", backgroundColor:"white"}, "cubo")
         .to("#img-menu", 0.5, { ease: Power3.easeOut, src:"../imgs/menu.png", padding:"0.8rem"}, "cubo")
         .to("#menu-background", 0.8, { ease: Power3.easeOut, background:"linear-gradient(to right, rgb(247,152,104) , rgb(246,181,62))"}, "cubo")

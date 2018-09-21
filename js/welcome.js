@@ -21,7 +21,7 @@ tl
     .to("#word-animation", 0.9, {text:"contact me", ease:Linear.easeNone})
     .to("#word-animation", 0.7, {text:"", ease:Linear.easeNone, delay: 0.3})
     .to("#word-animation", 0.2, {ease:Linear.easeNone, color: "white", fontWeight: "700"})
-    .to("#word-animation", 0.9, {text:"scroll down!", ease:Linear.easeNone})
+    .to("#word-animation", 0.9, {text:"scroll down", ease:Linear.easeNone})
 ;
 
 //menu background color
