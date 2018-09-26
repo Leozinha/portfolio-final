@@ -118,7 +118,7 @@ document.getElementById("img-menu").addEventListener("click", changeColor);
             .to("#img-menu-1", 0.001, { ease: Power3.easeOut, display:"none", padding:"0"}, "animal-busters")
             .to("#divider-menu", 0.5, { ease: Power3.easeOut, autoAlpha:0, visibility:"hidden", backgroundColor:"white"}, "animal-busters")
             .to("#img-menu", 0.5, { ease: Power3.easeOut, display:"flex" ,src:"../imgs/menu.png", padding:"0",width:"2.9rem", height:"2rem"}, "animal-busters")
-            .to("#menu-background", 0.8, { ease: Power3.easeOut, backgroundColor:"white"}, "animal-busters")
+            .to("#menu-background", 0.8, { ease: Power3.easeOut, backgroundColor:"white", height:"9rem"}, "animal-busters")
 
             .to("#films", 0.2, { ease: Power3.easeOut, visibility:"visible", autoAlpha:1 }, "animal-busters")
             .to("#bioliving", 0.2, { ease: Power3.easeOut, visibility:"visible", autoAlpha:1 }, "animal-busters")
@@ -264,7 +264,7 @@ function close_films() {
         .to("#img-menu-1", 0.001, { ease: Power3.easeOut, display:"none", padding:"0"}, "films")
         .to("#divider-menu", 0.5, { ease: Power3.easeOut, autoAlpha:0, visibility:"hidden", backgroundColor:"white"}, "films")
         .to("#img-menu", 0.5, { ease: Power3.easeOut, display:"flex" ,src:"../imgs/menu.png", padding:"0",width:"2.9rem", height:"2rem"}, "films")
-        .to("#menu-background", 0.8, { ease: Power3.easeOut, backgroundColor:"white"}, "films")
+        .to("#menu-background", 0.8, { ease: Power3.easeOut, backgroundColor:"white", height:"9rem"}, "films")
 
         .to("#animal-busters", 0.2, { ease: Power3.easeOut, visibility:"visible", autoAlpha:1}, "films")
         .to("#bioliving", 0.2, { ease: Power3.easeOut, visibility:"visible", autoAlpha:1}, "films")
@@ -412,7 +412,7 @@ function close_bioliving() {
         .to("#img-menu-1", 0.001, { ease: Power3.easeOut, display:"none", padding:"0"}, "bioliving")
         .to("#divider-menu", 0.5, { ease: Power3.easeOut, autoAlpha:0, visibility:"hidden", backgroundColor:"white"}, "bioliving")
         .to("#img-menu", 0.5, { ease: Power3.easeOut, display:"flex" ,src:"../imgs/menu.png", padding:"0", width:"2.9rem", height:"2rem"}, "bioliving")
-        .to("#menu-background", 0.8, { ease: Power3.easeOut, backgroundColor:"white"}, "bioliving")
+        .to("#menu-background", 0.8, { ease: Power3.easeOut, backgroundColor:"white", height:"9rem"}, "bioliving")
 
         .to("#cubo", 0.2, { ease: Power3.easeOut, visibility:"visible", autoAlpha:1}, "bioliving")
         .to("#animal-busters", 0.2, { ease: Power3.easeOut, visibility:"visible", autoAlpha:1}, "bioliving")
@@ -446,8 +446,8 @@ function hide_bioliving() {
     tl
         .to("#bioliving", 0.5, { ease: Power3.easeOut, visibility:"hidden", autoAlpha:0}, "bioliving")
 
-        .to("#img-menu", 0.5, { ease: Power3.easeOut, visibility: "hidden", scale: 0}, "bioliving")
-        .to("#img-menu-close", 0.5, { ease: Power3.easeOut, scale: 1, visibility: "visible", autoAlpha: 1 }, "bioliving")
+        .to("#img-menu", 0.5, { ease: Power3.easeOut, visibility: "hidden", scale: 0}, "img-menu")
+        .to("#img-menu-close", 0.5, { ease: Power3.easeOut, scale: 1, visibility: "visible", autoAlpha: 1 }, "img-menu")
 
         .to("#bioliving-img", 0.01, { ease: Power3.easeOut, visibility:"hidden", autoAlpha:0}, "bioliving")
         .to("#animal-busters-video", 0.5, { ease: Power3.easeOut, autoAlpha:1}, "bioliving")
@@ -468,8 +468,8 @@ function show_bioliving() {
     tl
         .to("#bioliving", 0.5, { ease: Power3.easeOut, visibility:"visible", autoAlpha:1}, "bioliving")
 
-        .to("#img-menu", 0.5, { ease: Power3.easeOut, scale: 1, visibility: "visible"}, "bioliving")
-        .to("#img-menu-close", 0.5, { ease: Power3.easeOut, scale: 0, visibility: "hidden", autoAlpha:0}, "bioliving")
+        .to("#img-menu", 0.5, { ease: Power3.easeOut, scale: 1, visibility: "visible"}, "img-menu")
+        .to("#img-menu-close", 0.5, { ease: Power3.easeOut, scale: 0, visibility: "hidden", autoAlpha:0}, "img-menu")
 
         .to("#films", 0.5, { ease: Power3.easeOut, visibility:"hidden", autoAlpha:0}, "bioliving")
         .to("#animal-busters", 0.5, { ease: Power3.easeOut, visibility:"hidden", autoAlpha:0}, "bioliving")
@@ -558,7 +558,7 @@ function close_cubo() {
         .to("#img-menu-1", 0.001, { ease: Power3.easeOut, display:"none", padding:"0"}, "cubo")
         .to("#divider-menu", 0.5, { ease: Power3.easeOut, autoAlpha:0, visibility:"hidden", backgroundColor:"white"}, "cubo")
         .to("#img-menu", 0.5, { ease: Power3.easeOut, display:"flex" ,src:"../imgs/menu.png", padding:"0", width:"2.9rem", height:"2rem"}, "cubo")
-        .to("#menu-background", 0.8, { ease: Power3.easeOut, background:"rgb(255, 255, 255)"}, "cubo")
+        .to("#menu-background", 0.8, { ease: Power3.easeOut, background:"rgb(255, 255, 255)", height:"9rem"}, "cubo")
 
         .to("#bioliving", 0.2, { ease: Power3.easeOut, visibility:"visible", autoAlpha:1}, "cubo")
         .to("#animal-busters", 0.2, { ease: Power3.easeOut, visibility:"visible", autoAlpha:1}, "cubo")
@@ -700,7 +700,7 @@ document.getElementById("animal-busters").addEventListener('click', function() {
         .to("#img-menu", 0.5, { ease: Power3.easeOut, src:"../imgs/show.png", padding:"0.5rem", width:"2.5rem", height:"2.5rem"}, "animal-busters")
         .to("#img-menu-close", 0.5, { ease: Power3.easeOut, src:"../imgs/hide.png"}, "animal-busters")
 
-        .to("#menu-background", 0.8, { ease: Power3.easeOut, backgroundColor:"#0173c3"}, "animal-busters")
+        .to("#menu-background", 0.8, { ease: Power3.easeOut, backgroundColor:"#0173c3", height:"8.5rem"}, "animal-busters")
 
         .to("#films", 0.001, { ease: Power3.easeOut, visibility:"hidden", autoAlpha:0 }, "animal-busters")
         .to("#bioliving", 0.2, { ease: Power3.easeOut, visibility:"hidden", autoAlpha:0 }, "animal-busters")
@@ -753,7 +753,7 @@ document.getElementById("films").addEventListener('click', function() {
         .to("#img-menu", 0.5, { ease: Power3.easeOut, src:"../imgs/show.png", padding:"0.5rem", width:"2.5rem", height:"2.5rem"}, "films")
         .to("#img-menu-close", 0.5, { ease: Power3.easeOut, src:"../imgs/hide.png"}, "films")
 
-        .to("#menu-background", 0.8, { ease: Power3.easeOut, backgroundColor:"black"}, "films")
+        .to("#menu-background", 0.8, { ease: Power3.easeOut, backgroundColor:"black", height:"8.5rem"}, "films")
 
         .to("#animal-busters", 0.001, { ease: Power3.easeOut, visibility:"hidden", autoAlpha:0}, "films")
         .to("#bioliving", 0.2, { ease: Power3.easeOut, visibility:"hidden", autoAlpha:0}, "films")
@@ -811,7 +811,7 @@ document.getElementById("bioliving").addEventListener('click', function() {
         .to("#img-menu", 0.5, { ease: Power3.easeOut, src:"../imgs/show.png", padding:"0.5rem", width:"2.5rem", height:"2.5rem"}, "bioliving")
         .to("#img-menu-close", 0.5, { ease: Power3.easeOut, src:"../imgs/hide.png"}, "bioliving")
 
-        .to("#menu-background", 0.8, { ease: Power3.easeOut, backgroundColor:"#73B219"}, "bioliving")
+        .to("#menu-background", 0.8, { ease: Power3.easeOut, backgroundColor:"#73B219", height:"8.5rem"}, "bioliving")
 
         .to("#animal-busters", 0.2, { ease: Power3.easeOut, visibility:"hidden", autoAlpha:0}, "bioliving")
         .to("#films", 0.2, { ease: Power3.easeOut, visibility:"hidden", autoAlpha:0}, "bioliving")
@@ -868,7 +868,7 @@ document.getElementById("cubo").addEventListener('click', function() {
         .to("#img-menu", 0.5, { ease: Power3.easeOut, src:"../imgs/show.png", padding:"0.5rem", width:"2.5rem", height:"2.5rem"}, "cubo")
         .to("#img-menu-close", 0.5, { ease: Power3.easeOut, src:"../imgs/hide.png"}, "cubo")
 
-        .to("#menu-background", 0.8, { ease: Power3.easeOut, background:"linear-gradient(to right, rgb(247,152,104) , rgb(246,181,62))"}, "cubo")
+        .to("#menu-background", 0.8, { ease: Power3.easeOut, background:"linear-gradient(to right, rgb(247,152,104) , rgb(246,181,62))", height:"8.5rem"}, "cubo")
 
         .to("#animal-busters", 0.2, { ease: Power3.easeOut, visibility:"hidden", autoAlpha:0}, "cubo")
         .to("#films", 0.2, { ease: Power3.easeOut, visibility:"hidden", autoAlpha:0}, "cubo")

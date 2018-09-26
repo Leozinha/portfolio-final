@@ -308,7 +308,7 @@ a{
 }
 
 .icon-white{
-    height: 14.5rem;
+    height: 15rem;
     background-color: white;
     border-bottom-left-radius: 70px;
     border-top-left-radius: 70px;
@@ -360,12 +360,12 @@ a{
     cursor: pointer;
     transition: all 2ms ease-out;
 }
-
+/*
 .icon-menu-1:hover{
     width: 2.6rem;
     height: 2.6rem;
 }
-
+*/
 .icon-rotate{
     transform: rotate(180deg);
 }
@@ -756,6 +756,13 @@ a{
     cursor: pointer;
 }
 
+.contact-link-span{
+    visibility: hidden;
+    opacity: 0;
+    font-weight: 800;
+    font-size: 2.2rem;
+}
+
 .contact-link-line{
     border-radius: 192px;
     background-color: white;
@@ -1010,7 +1017,128 @@ a{
 
 @media (min-width: 1800px) {
 
+    .menu-content {
+        top: 6%;
+    }
 
+    .main-title {
+        width: 9rem;
+    }
+
+    .pagination {
+        width: 9rem;
+    }
+
+    .icon-white-position {
+        margin-left: 2.9rem;
+    }
+
+    .icon-white2-position {
+        margin-left: 2.9rem;
+    }
+
+    .welcome-title {
+        font-size: 10rem;
+    }
+
+    .welcome-description {
+        font-size: 3.5rem;
+    }
+
+    .menu-font-size {
+        font-size: 4em;
+    }
+
+    .menu-width {
+        width: 6.5rem;
+    }
+    .menu {
+        height: 9rem;
+    }
+
+    .menu-skills {
+        width: 14rem;
+    }
+
+    .main-title-letters-details {
+        font-size: 1.7rem;
+    }
+
+    .skills-title {
+        font-size: 4em;
+        width: 96%;
+    }
+
+    .skills-title-item {
+        height: 20rem;
+    }
+
+    .same-percentage {
+        position: relative;
+        bottom: 4%;
+    }
+
+    .front-percentage {
+        position: relative;
+        bottom: 9%;
+    }
+
+    .wave-animation {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .skills {
+        position: relative;
+        top: 23.5%;
+    }
+
+    .degree {
+        position: relative;
+        top: 0.85rem;
+    }
+
+    .education {
+        font-size: 1.3rem;
+    }
+
+    .sizeL {
+        font-size: 4rem;
+    }
+
+    .degree-img {
+        width: 14.3rem;
+    }
+
+    .projects-menu {
+        width: 25.5rem;
+        height: 23.5rem;
+        top: 33.5%;
+    }
+
+    .animal-busters-keywords-item1 {
+        font-size: 1.8em;
+    }
+
+    .animal-busters-keywords-item2 {
+        font-size: 1.8em;
+    }
+
+    .menu-width{
+        width: 6.5rem;
+    }
+
+    .menu-img {
+        margin-top: 0;
+    }
+
+    .contact-img {
+        width: 18rem;
+    }
+
+    .icon-menu-1 {
+        padding: 0.7rem;
+    }
 
 }
 
