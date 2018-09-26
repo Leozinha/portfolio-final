@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon/favicon-32x32.png">
+
 </head>
 <body>
 
@@ -20,7 +23,8 @@
 <div id="background-menu" class="background-menu flex-row">
 
     <div id="menu-skills" class="menu-skills flex-column">
-        <div id="menu-skills-letters" class="main-title-letters">
+
+        <div onclick="skills()" id="menu-skills-letters" class="main-title-letters">
             <div class="main-title-letters-details">
                 <h3 class="font800 main-title-letters-item">S</h3>
                 <h3 class="font800 main-title-letters-item">K</h3>
@@ -30,10 +34,12 @@
                 <h3 class="font800 main-title-letters-item">S</h3>
             </div>
         </div>
+
     </div>
 
     <div id="menu-projects" class="menu-skills flex-column">
-        <div id="menu-projects-letters" class="main-title-letters">
+
+        <div onclick="projects()" id="menu-projects-letters" class="main-title-letters">
             <div class="main-title-letters-details">
                 <h3 class="font800 main-title-letters-item">P</h3>
                 <h3 class="font800 main-title-letters-item">R</h3>
@@ -45,10 +51,12 @@
                 <h3 class="font800 main-title-letters-item">S</h3>
             </div>
         </div>
+
     </div>
 
     <div id="menu-contact" class="menu-skills flex-column">
-        <div id="menu-contact-letters" class="main-title-letters">
+
+        <div onclick="contact()" id="menu-contact-letters" class="main-title-letters">
             <div class="main-title-letters-details">
                 <h3 class="font800 main-title-letters-item">C</h3>
                 <h3 class="font800 main-title-letters-item">O</h3>
@@ -59,6 +67,7 @@
                 <h3 class="font800 main-title-letters-item">T</h3>
             </div>
         </div>
+
     </div>
 
 </div>
@@ -69,7 +78,7 @@
         <div id="menu-content" class="menu-content flex-row">
             <span id="menu-title-1" class="font-quick font600 menu-font-size">PORT</span>
 
-            <div id="menu-background" class="menu">
+            <div id="menu-background" class="menu menu-width">
 
                 <div class="flex">
                     <div id="hide-menu-1" class="flex">
@@ -82,7 +91,7 @@
 
                 <hr id="divider-menu" class="divider-menu">
 
-                <div class="menu-img flex">
+                <div class="menu-img menu-width flex">
                     <img id="img-menu" src="imgs/menu.png" class="icon-menu">
                     <img id="img-menu-close" onclick="changeColorClose()" src="imgs/close.png" class="icon-menu-close">
                 </div>
@@ -95,17 +104,19 @@
     <!-- title + pagination -->
     <div id="main-title" class="main-title flex-column">
         <div id="main-title-letters">
-                <h3 class="main-title-details main-title-letters-item">S</h3>
-                <h3 class="main-title-details main-title-letters-item">K</h3>
-                <h3 class="main-title-details main-title-letters-item">I</h3>
-                <h3 class="main-title-details main-title-letters-item">L</h3>
-                <h3 class="main-title-details main-title-letters-item">L</h3>
-                <h3 class="main-title-details main-title-letters-item">S</h3>
+                <h3 id="main-title-1" class="main-title-details main-title-letters-item">W</h3>
+                <h3 id="main-title-2" class="main-title-details main-title-letters-item">E</h3>
+                <h3 id="main-title-3" class="main-title-details main-title-letters-item">L</h3>
+                <h3 id="main-title-4" class="main-title-details main-title-letters-item">C</h3>
+                <h3 id="main-title-5" class="main-title-details main-title-letters-item">O</h3>
+                <h3 id="main-title-6" class="main-title-details main-title-letters-item">M</h3>
+                <h3 id="main-title-7" class="main-title-details main-title-letters-item">E</h3>
+                <h3 id="main-title-8" class="main-title-details main-title-letters-item"></h3>
         </div>
     </div>
 
     <div id="pagination" class="pagination flex-column">
-        <h3 class="main-number main-title-details">01</h3>
+        <h3 id="pagination-number" class="main-number main-title-details">01</h3>
 
         <hr class="divider-nr-pages">
 
@@ -120,7 +131,7 @@
             <h1 class="font800 welcome-title">WELCOME</h1>
             <hr class="divider">
 
-            <span class="font400 welcome-description">I'm Eleonor and <br> if you want to
+            <span class="font500 welcome-description">I'm Eleonor and <br> if you want to
                 <img id="icon-white-left" src="imgs/white.png" class="icon-white-left">
                 <span id="word-animation"></span>
                 <img id="icon-white-right" src="imgs/white.png" class="icon-white-right icon-rotate">
@@ -130,62 +141,68 @@
 
     </div>
 
-    <div id="skills" class="skills full-page">
+    <div id="skills" class="skills full-page-skills flex-column">
 
-    <div id="skills-title" class="skills-title flex-row">
-        <span class="skills-title-animator flex-column">
-            <span class="title">ANIMATOR</span>
-            <span class="percentage-number number-1">40%</span>
-            <span class="skills-sub-title">GREENSOCK</span>
-        </span>
-        <span class="flex-column">
-            <span class="title">FRONT-END</span>
-            <span class="percentage-number number-2">60%</span>
-            <span class="skills-sub-title">HTML + CSS + JS + React</span>
-        </span>
-        <span class="skills-title-end flex-column">
-            <span class="title">BACK-END</span>
-            <span class="percentage-number number-3">40%</span>
-            <span class="skills-sub-title">PHP</span>
-        </span>
-    </div>
+        <div class="flex">
+            <div id="skills-title" class="skills-title flex-row">
+                <div class="skills-title-item skills-item1-position flex-column">
+                    <span class="title">ANIMATOR</span>
+                    <span class="percentage-number same-percentage">40%</span>
+                    <span class="skills-sub-title">GREENSOCK</span>
+                </div>
+                <div class="skills-title-item flex-column">
+                    <span class="title">FRONT-END</span>
+                    <span class="percentage-number front-percentage">60%</span>
+                    <span class="skills-sub-title">HTML + CSS + JS + React</span>
+                </div>
+                <div class="skills-title-item skills-item2-position flex-column">
+                    <span class="title">BACK-END</span>
+                    <span class="percentage-number same-percentage">40%</span>
+                    <span class="skills-sub-title">PHP</span>
+                </div>
+            </div>
 
-    <div id="percentages" class="percentages flex-row">
-        <svg class="wave-animation">
-            <g id="wave-1">
-                <polygon points="500,250 -100,100" id="wave" class="wave"></polygon>
+            <div id="percentages" class="percentages flex-row">
+                <svg class="wave-animation">
+                    <g id="wave-1">
+                        <polygon points="500,250 -100,100" id="wave" class="wave"></polygon>
 
-            </g>
-        </svg>
+                    </g>
+                </svg>
 
-        <svg class="wave-animation">
-            <g id="wave-2">
-                <polygon points="500,250 -100,100" id="wave2" class="wave"></polygon>
+                <svg class="wave-animation">
+                    <g id="wave-2">
+                        <polygon points="500,250 -100,100" id="wave2" class="wave"></polygon>
 
-            </g>
-        </svg>
-        <svg class="wave-animation">
-            <g id="wave-3">
-                <polygon points="500,250 -100,100" id="wave3" class="wave"></polygon>
+                    </g>
+                </svg>
+                <svg class="wave-animation">
+                    <g id="wave-3">
+                        <polygon points="500,250 -100,100" id="wave3" class="wave"></polygon>
 
-            </g>
-        </svg>
-    </div>
+                    </g>
+                </svg>
+            </div>
+        </div>
 
-    <div id="percentages-back" class="percentages-back flex-row">
+
+    <!--<div id="percentages-back" class="percentages-back flex-row">
         <div class="percentages-back-item"></div>
         <div class="percentages-back-item"></div>
         <div class="percentages-back-item"></div>
-    </div>
+    </div>-->
 
     <div id="degree" class="degree flex-row">
 
         <div id="education" class="education flex-column">
             <span class="font800 sizeL">EDUCATION</span>
-            <span class="font400">BACHELOR'S DEGREE</span>
-            <span class="font400">NEW TECNOLOGIES OF COMMUNICATION</span>
-            <span class="font400">UNIVERSITY OF AVEIRO, PORTUGAL</span>
-            <span class="font400">2014 - 2018</span>
+            <div class="flex-column" style="line-height: 1.5">
+                <span class="font500">BACHELOR'S DEGREE</span>
+                <span class="font500">NEW TECNOLOGIES OF COMMUNICATION</span>
+                <span class="font500">UNIVERSITY OF AVEIRO, PORTUGAL</span>
+                <span class="font500">2014 - 2018</span>
+            </div>
+
         </div>
 
         <div class="divider-degree"></div>
@@ -263,18 +280,21 @@
                         <span id="animal-busters-keywords-item2" class="animal-busters-keywords-item2 font700">Game</span>
                     </div>
 
-                    <img id="animal-busters-img" src="imgs/busters.png" class="busters-img">
+                    <div id="animal-busters-img">
+                        <img id="animal-busters-img-color" src="imgs/busters.png" class="busters-img">
+                    </div>
 
-                    <p id="animal-busters-p" class="animal-busters-p span-cursor font400">
-                        ola nao sabes o quao quero isto nao posso d f a diia dd ff e eee rrr  ttt eeww ddd a dds adaad dad aas
-                        ola nao sabes o quao quero isto nao posso d f a diia dd ff e eee rrr  ttt eeww ddd a dds adaad dad aas</p>
+                    <p id="animal-busters-p" class="animal-busters-p span-cursor font500">
+                        Web-based RPG Game where you, as a zoo ranger, need to catch all the zoo animals that escaped.
+                        Firstly, you need to collect three types of food (Meat, Fish and Fruits), through different mini-games, and then
+                        you just need to lure them in. But, be careful sometimes they can be very stubborn!
+                    </p>
 
                     <div id="animal-busters-icons" class="animal-busters-icons flex-row">
                         <img id="animal-busters-icon-left" src="imgs/icon_busters.png" class="icon-white-left animal-busters-icon">
-                        <span id="animal-busters-link" class="animal-busters-link font600"></span>
+                        <span id="animal-busters-link" class="animal-busters-link font600" onclick="event.stopPropagation()"></span>
                         <img id="animal-busters-icon-right" src="imgs/icon_busters.png" class="icon-white-right icon-rotate animal-busters-icon">
                     </div>
-
                 </div>
 
                 <div id="films" class="projects-item flex">
@@ -284,15 +304,18 @@
                         <span id="films-keywords-item2" class="animal-busters-keywords-item2 font700">Movies</span>
                     </div>
 
-                    <img id="films-img" src="imgs/films.png" class="films-img">
+                    <div id="films-img">
+                        <img id="films-img-color" src="imgs/films.png" class="films-img">
+                    </div>
 
-                    <p id="films-p" class="animal-busters-p span-cursor font600">
-                        ola nao sabes o quao quero isto nao posso d f a diia dd ff e eee rrr  ttt eeww ddd a dds adaad dad aas
-                        ola nao sabes o quao quero isto nao posso d f a diia dd ff e eee rrr  ttt eeww ddd a dds adaad dad aas</p>
+                    <p id="films-p" class="animal-busters-p span-cursor font500">
+                        React Web App source for movies. The API used was from The Database Movies (TMDb) which
+                        is a community built movie and TV database.
+                    </p>
 
                     <div id="films-icons" class="animal-busters-icons flex-row">
                         <img id="films-icon-left" src="imgs/icon_films.png" class="icon-white-left animal-busters-icon">
-                        <span id="films-link" class="animal-busters-link font600"></span>
+                        <span id="films-link" class="animal-busters-link font600" onclick="event.stopPropagation()"></span>
                         <img id="films-icon-right" src="imgs/icon_films.png" class="icon-white-right icon-rotate animal-busters-icon">
                     </div>
 
@@ -308,15 +331,18 @@
                         <span id="bioliving-keywords-item2" class="animal-busters-keywords-item2 font700">Animals</span>
                     </div>
 
-                    <img id="bioliving-img" src="imgs/bioliving.png" class="bio-img">
+                    <div id="bioliving-img">
+                        <img id="bioliving-img-color" src="imgs/bioliving.png" class="bio-img">
+                    </div>
 
-                    <p id="bioliving-p" class="animal-busters-p span-cursor font600">
-                        ola nao sabes o quao quero isto nao posso d f a diia dd ff e eee rrr  ttt eeww ddd a dds adaad dad aas
-                        ola nao sabes o quao quero isto nao posso d f a diia dd ff e eee rrr  ttt eeww ddd a dds adaad dad aas</p>
+                    <p id="bioliving-p" class="animal-busters-p span-cursor font500">
+                        Dynamic Web Page created for a nature organization (Bioliving) to help animals.
+                        The user can sponsor animals through a diverse range of resources, which they can visit through group events.
+                        </p>
 
                     <div id="bioliving-icons" class="animal-busters-icons flex-row">
                         <img id="bioliving-icon-left" src="imgs/icon_bio.png" class="icon-white-left animal-busters-icon">
-                        <span id="bioliving-link" class="animal-busters-link font600"></span>
+                        <span id="bioliving-link" class="animal-busters-link font600" onclick="event.stopPropagation()"></span>
                         <img id="bioliving-icon-right" src="imgs/icon_bio.png" class="icon-white-right icon-rotate animal-busters-icon">
                     </div>
 
@@ -329,15 +355,18 @@
                         <span id="cubo-keywords-item2" class="animal-busters-keywords-item2 font700">Gamification</span>
                     </div>
 
-                    <img id="cubo-img" src="imgs/cubo.png" class="cubo-img">
+                    <div id="cubo-img">
+                        <img id="cubo-img-color" src="imgs/cubo.png" class="cubo-img">
+                    </div>
 
-                    <p id="cubo-p" class="animal-busters-p span-cursor font600">
-                        ola nao sabes o quao quero isto nao posso d f a diia dd ff e eee rrr  ttt eeww ddd a dds adaad dad aas
-                        ola nao sabes o quao quero isto nao posso d f a diia dd ff e eee rrr  ttt eeww ddd a dds adaad dad aas</p>
+                    <p id="cubo-p" class="animal-busters-p span-cursor font500">
+                        Gamification Web App in Education based on Human-Centric Design with a real institution problem.
+                        The students have a variety of civic challenges to accomplish, where they receive chest keys to open, so they can collect awards.
+                    </p>
 
                     <div id="cubo-icons" class="animal-busters-icons flex-row">
                         <img id="cubo-icon-left" src="imgs/icon_cubo.png" class="icon-white-left animal-busters-icon">
-                        <span id="cubo-link" class="animal-busters-link font600"></span>
+                        <span id="cubo-link" class="animal-busters-link font600" onclick="event.stopPropagation()"></span>
                         <img id="cubo-icon-right" src="imgs/icon_cubo.png" class="icon-white-right icon-rotate animal-busters-icon">
                     </div>
 
@@ -349,7 +378,7 @@
 
         <div id="background-video" class="flex background-video">
             <video id="animal-busters-video" class="video video-animal-busters">
-                <source src="https://www.dropbox.com/s/bbe65gkdx91lthn/animal_busters.mp4?raw=1" type="video/mp4">
+                <source id="video-src" src="" type="video/mp4">
             </video>
         </div>
 
@@ -416,17 +445,17 @@
 
             <div id="contact-link" class="flex-column contact-link">
                 <div id="expand-email">
-                    <a class="email-me" href="mailto:eleonorsilva123@gmail.com"><span id="contact-link-span" class="contact-link-span">contact me</span></a>
+                    <a class="email-me" href="mailto:eleonorsilva123@gmail.com" target="_blank"><span id="contact-link-span" class="contact-link-span">contact me</span></a>
                 </div>
-                <hr id="line1" class="contact-link-line line1">
-                <hr id="line2" class="contact-link-line line2">
-                <hr id="line3" class="contact-link-line line3">
-                <hr id="line4" class="contact-link-line line4">
+                <div id="line1" class="contact-link-line line1"></div>
+                <div id="line2" class="contact-link-line line2"></div>
+                <div id="line3" class="contact-link-line line3"></div>
+                <div id="line4" class="contact-link-line line4"></div>
             </div>
 
             <div id="contact-social-media" class="flex-row social-media">
-                <div id="contact-facebook" class="contact-social-img facebook-space"></div>
-                <div id="contact-insta" class="contact-social-img insta-space"></div>
+                <a href="https://www.facebook.com/eleonor.silva" target="_blank"><div id="contact-facebook" class="contact-social-img facebook-space"></div></a>
+                <a href="https://www.instagram.com/leozinhachan/" target="_blank"><div id="contact-insta" class="contact-social-img insta-space"></div></a>
             </div>
 
         </div>
@@ -449,6 +478,7 @@
 <script src="js/skills.js"></script>
 <script src="js/projects.js"></script>
 <script src="js/contact.js"></script>
+
 
 </body>
 </html>

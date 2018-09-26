@@ -9,8 +9,8 @@ tl
     .to("#menu-letter", 0.5, {ease: Power3.easeOut, autoAlpha:1, delay: 0.9}, "icon-black-left")
 
     //icon-white animation
-    .to("#icon-white-top", 1.8, { ease: Power4.easeOut, top: "85%"}, "icon-white-top")
-    .to("#icon-white-bottom", 1.8, {ease: Power4.easeOut, bottom:"85%"}, "icon-white-top")
+    .to("#icon-white-top", 1.8, { ease: Power4.easeOut, top: "88%"}, "icon-white-top")
+    .to("#icon-white-bottom", 1.8, {ease: Power4.easeOut, bottom:"88%"}, "icon-white-top")
     .to("#page-content", 1.8, {ease: Power4.easeOut,autoAlpha:1, visibility: "visible", delay:0.2}, "icon-white-top")
 
     .to("#word-animation", 0.9, {text:"know me", ease:Linear.easeNone, delay: 0.2}, "word-animation")

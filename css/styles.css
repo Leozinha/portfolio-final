@@ -2,7 +2,7 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 h1{
@@ -77,6 +77,7 @@ a{
 .divider{
     width: 3%;
     border: 1px solid black;
+    font-size: 2.2em;
 }
 
 .divider-degree{
@@ -86,9 +87,11 @@ a{
 }
 
 .full-page{
-    height: 120%;
-    position: relative;
-    top: -21rem;
+    height: 100%;
+}
+
+.full-page-skills{
+    height: 81%;
 }
 
 .sizeL{
@@ -106,15 +109,17 @@ a{
     cursor: context-menu;
 }
 
+/*
 .font-quick{
     font-family: 'Quicksand', sans-serif;
 }
+*/
 
 .main-title{
     align-items: center;
     text-align: center;
-    width: 12%;
-    height: 59%;
+    width: 8rem;
+    height: 100%;
     position: absolute;
 }
 
@@ -131,12 +136,13 @@ a{
 .main-title-letters{
     border: 2px solid rgba(0, 0, 0,0.35);
     width: 44%;
+    cursor: pointer;
 }
 
 .main-title-letters-details{
     padding: 2rem 0 2rem 0;
     opacity: 0.35;
-    font-size: 2rem;
+    font-size: 1.3rem;
     background-color: transparent;
     transition: all 0.6s ease-out;
 }
@@ -172,8 +178,8 @@ a{
 .pagination{
     align-items: center;
     text-align: center;
-    width: 12%;
-    height: 59%;
+    width: 8rem;
+    height: 100%;
     position: absolute;
     right: 0;
 }
@@ -201,20 +207,22 @@ a{
 }
 
 .skills{
+    position: relative;
+    top: 23.6%;
     display: none;
     opacity: 0;
     z-index: 0;
+    justify-content: space-evenly;
 }
 
 .menu-content{
     position: relative;
+    top: 5%;
     z-index: 1;
     height: 15.5vh;
-    padding-top: 4rem;
     font-family: 'Quicksand', sans-serif;
 }
 .menu{
-    width: 6.5rem;
     height: 9rem;
     background-color: white;
     margin: 0 0.5rem 0 0.5rem;
@@ -225,16 +233,19 @@ a{
 .menu-img{
     position: absolute;
     align-items: center;
-    width: 6.5rem;
     margin-top: -0.1rem;
+}
+
+.menu-width{
+    width: 6.5rem;
 }
 
 .menu-skills{
     align-items: center;
     text-align: center;
-    width: 12%;
-    height: 59%;
-    padding-top: 13.5rem;
+    width: 12.5rem;
+    position: relative;
+    top: 35%;
 }
 
 .menu-background-color{
@@ -258,14 +269,18 @@ a{
 }
 
 .blur-background{
-    height: 100%;
+    height: 101%;
+    position: relative;
+    bottom: 16%;
 }
 
 .icon-menu-close{
     visibility: hidden;
     opacity: 0;
-    width: 41%;
+    width: 2.5rem;
+    height: 2.5rem;
     position: absolute;
+    cursor: pointer;
 }
 
 .icon-black-left{
@@ -293,27 +308,27 @@ a{
 }
 
 .icon-white{
-    height: 29%;
+    height: 14.5rem;
     background-color: white;
     border-bottom-left-radius: 70px;
     border-top-left-radius: 70px;
-    width: 3%;
+    width: 3.2rem;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     z-index: 1;
 }
 
 .icon-white-position{
     position: fixed;
-    bottom: -15%;
-    margin-left: 5rem;
+    bottom: -12%;
+    margin-left: 2.4rem;
 }
 
 .icon-white2{
-    height: 29%;
+    height: 14.5rem;
     background-color: white;
     border-bottom-right-radius: 70px;
     border-top-right-radius: 70px;
-    width: 3%;
+    width: 3.2rem;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     z-index: 1;
 }
@@ -321,19 +336,34 @@ a{
 .icon-white2-position{
     position: fixed;
     right: 0;
-    margin-right: 5rem;
-    top: -15%;
+    margin-right: 2.4rem;
+    top: -12%;
 }
 
 .icon-menu{
     visibility: visible;
-    width: 50%;
+    width: 2.9rem;
+    height: 2rem;
+    transition: all 2ms ease-out;
+    cursor: pointer;
+}
+
+.icon-menu:hover{
+    width: 3rem;
+    height: 2.1rem;
 }
 
 .icon-menu-1{
     visibility: visible;
-    width: 41%;
-    height: 41%;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    transition: all 2ms ease-out;
+}
+
+.icon-menu-1:hover{
+    width: 2.6rem;
+    height: 2.6rem;
 }
 
 .icon-rotate{
@@ -344,17 +374,16 @@ a{
     visibility: hidden;
     opacity: 0;
     text-align: center;
-    padding-top: 31rem;
-    font-size: 2.2em;
+    position: relative;
+    top: 35%;
 }
 
 .percentages{
-    position: relative;
     visibility: visible;
     opacity: 1;
-    padding-top: 29.5rem;
     justify-content: space-evenly;
-    z-index: 1;
+    z-index: 0;
+    width: 100%;
 }
 
 .welcome-title{
@@ -367,12 +396,10 @@ a{
 }
 
 .skills-title{
-    width: 71%;
+    width: 100%;
+    justify-content: space-evenly;
     position: absolute;
-    top: 6.9em;
-    left: 4.6em;
     align-self: center;
-    justify-content: space-between;
     font-size: 3.8em;
     font-weight: 700;
     color: #F9F9F9;
@@ -381,16 +408,40 @@ a{
     letter-spacing: 0.015em;
 }
 
+.skills-title-item{
+    height: 19rem;
+    justify-content: space-evenly;
+}
+
+.skills-item1-position{
+    position: relative;
+    left: 3rem;
+}
+
+.skills-item2-position{
+    position: relative;
+    right: 2.5rem;
+}
+
 .title{
     position: relative;
     bottom: 1rem;
+}
+
+.front-percentage{
+    position: relative;
+    bottom: 5%;
+}
+
+.same-percentage{
+    position: relative;
+    bottom: -2%;
 }
 
 .percentage-number{
     font-size: 0.5em;
     opacity: 0.75;
     color: #2E6FE8;
-    padding: 3rem 0 3.3rem 0;
 }
 
 .number-1{
@@ -447,9 +498,10 @@ a{
 /* wave animation */
 
 .wave-animation{
-    width: 8.19%;
-    height: 17vh;
+    width: 12rem;
+    height: 12rem;
     border-radius: 220px;
+    border: 3px solid rgba(46,111,232,0.5);
 }
 
 .wave {
@@ -464,15 +516,14 @@ a{
 
 .degree{
     justify-content: space-evenly;
-    margin-top: -1.5rem;
+    align-self: center;
+    width: 100%;
 }
 
 .degree-img{
     background: url("../imgs/leo.png") no-repeat center;
-    background-size: 100%;
-    width: 13%;
-    height: 26vh;
-    margin-right: 25rem;
+    background-size: 102%;
+    width: 14rem;
     border-radius: 298px;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
@@ -482,7 +533,6 @@ a{
     height: 22vh;
     align-self: center;
     text-align: center;
-    margin-left: 25rem;
     font-size: 1.2em;
 }
 
@@ -515,11 +565,11 @@ a{
 }
 
 .projects-menu{
-    width: 21%;
-    height: 33%;
+    width: 21rem;
+    height: 21rem;
     margin: auto;
     position: relative;
-    top: 41.5%;
+    top: 47.5%;
     z-index: 1;
 }
 
@@ -545,8 +595,7 @@ a{
 }
 
 .bio-img{
-    width: 60%;
-    height: 60%;
+    width: 63%;
 }
 
 #animal-busters{
@@ -596,18 +645,15 @@ a{
 }
 
 .films-img{
-    width: 49%;
-    height: 49%;
+    width: 49%;/*49*/
 }
 
 .cubo-img{
-    width: 44%;
-    height: 44%;
+    width: 45%;
 }
 
 .busters-img{
     width: 69%;
-    height: 69%;
     opacity: 1;
 }
 
@@ -617,16 +663,17 @@ a{
     position: absolute;
     z-index: -1;
     opacity: 0;
+    font-size: 1.5rem;
 }
 
 .animal-busters-keywords-item1{
-    padding-bottom: 5.5rem;
-    font-size: 1.5em;
+    position: relative;
+    bottom: 49%;
 }
 
 .animal-busters-keywords-item2{
-    padding-top: 5.5rem;
-    font-size: 1.5em;
+    position: relative;
+    top: 49%;
 }
 
 .animal-busters-icons{
@@ -635,6 +682,7 @@ a{
     position: absolute;
     width: 100%;
     bottom: 5%;
+    /*top: 95%*/
     align-items: center;
 }
 
@@ -646,10 +694,11 @@ a{
     text-align: center;
     padding-top: 2.5rem;
     font-size: 1.06em;
+    margin: 0;
 }
 
 .animal-busters-icon{
-    width: 10px;
+    width: 3%;
     padding-right: 0.3rem;
 }
 
@@ -659,12 +708,13 @@ a{
     font-size: 1.4em;
     transition: font-size 2ms ease-out;
     cursor: pointer;
+    position: relative;
 }
-
+/*
 .animal-busters-link:hover{
     font-size: 1.5rem;
 }
-
+*/
 .contact{
     display: none;
     opacity: 0;
@@ -675,7 +725,7 @@ a{
     background: url("../imgs/leo.png") no-repeat center;
     background-size: 102%;
     margin: auto;
-    width: 17%;
+    width: 14rem;
     border-radius: 298px;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     z-index: 2;
@@ -707,10 +757,9 @@ a{
 }
 
 .contact-link-line{
-    border: 1.5px solid white;
     border-radius: 192px;
     background-color: white;
-    height: 0.2rem;
+    height: 0.3rem;
     margin: 0.25rem;
 }
 
@@ -738,12 +787,12 @@ a{
     visibility: hidden;
     opacity: 0;
     width: 1.7rem;
-    height: 0.18rem;
     margin: 0.2rem -0.2rem 0.2rem 0.2rem;
 }
 
 .contact-elements{
-    padding-top: 29.5rem;
+    position: relative;
+    top: 35%;
 }
 
 .social-media{
@@ -761,19 +810,24 @@ a{
     height: 4.5rem;
     background-color: white;
     border-radius: 100%;
+    cursor: pointer;
 }
 
 .facebook-space{
+    background: white url("../imgs/face.png") no-repeat center;
+    background-size: 55%;
     position: relative;
-    left: 6em;
-    bottom: 6em;
+    left: 7rem;
+    bottom: 7rem;
     margin-right: 8.5em;
 }
 
 .insta-space{
+    background: white url("../imgs/insta.png") no-repeat center;
+    background-size: 60%;
     position: relative;
-    right: 6em;
-    bottom: 6em;
+    right: 7rem;
+    bottom: 7rem;
     margin-left: 8.5em;
 }
 
@@ -781,7 +835,6 @@ a{
 
 .video-animal-busters{
     width: 100%;
-    height: 100%;
     position: absolute;
     bottom: 0;
     z-index: 0;
@@ -802,466 +855,165 @@ a{
 
 /* MEDIA QUERIES */
 
-@media (min-width: 1200px) and (max-width: 1440px){
 
-    .welcome-title{
-        font-size: 8.3rem;
-    }
+@media (min-width: 1200px) {
 
-    .welcome-description{
-        font-size: 2.4rem;
-    }
-
-    .icon-black-left {
-        width: 6.8px;
-    }
-
-    .icon-black-right {
-        width: 6.8px;
-    }
-
-    .degree{
-        margin-top: -0.8rem;
-    }
-
-    .percentages-back-item{
-        min-width: 9.1%;
-        max-height: 15.6vh;
+    .wave-animation {
+        width: 8rem;
+        height: 8rem;
     }
 
     .skills-title{
-        top: 50.8%;
-        font-size: 3.2em;
-    }
-
-    .wave-animation{
-        width: 9.5%;
-    }
-
-    .icon-white2{
-        width: 3.6%;
-    }
-
-    .icon-white{
-        width: 3.6%;
-    }
-
-    .divider-menu{
-        margin-top: 0.1rem;
-    }
-
-    .menu{
-        width: 5.5rem;
-        height: 7.5rem;
-    }
-
-    .menu-font-size {
-        font-size: 3.3em;
-    }
-
-    .icon-white2-position{
-        margin-right: 3.5rem;
-    }
-
-    .icon-white-position{
-        margin-left: 3.5rem;
-    }
-
-    .page-content{
-        padding-top: 30rem;
-    }
-
-    .skills-sub-title {
-        top: 0;
-    }
-
-    .number-1{
-        position: relative;
-        right: 0.5rem;
-        top: 0.5rem;
-    }
-
-    .number-3{
-        left: 0.4rem;
-        top: 1rem;
-    }
-
-    .menu-content{
-        padding-top: 3rem;
-    }
-
-    .education{
-        margin-left: 14rem;
-        font-size: 0.95em;
-    }
-
-    .degree-img{
-        width: 14%;
-        height: 24.4vh;
-        margin-right: 14rem;
-    }
-
-    /*
-    .contact-img{
-        width: 15.4em;
-        height: 15.3em;
-    }
-
-    .sizeL {
-
         font-size: 3em;
     }
 
-    .contact-link-line{
-        height: 0.18rem;
+    .skills-title-item{
+        height: 15rem;
     }
 
-    .line1{
-        width: 3.7%;
+    .education{
+        position: relative;
+        left: 6%;
+        font-size: 1rem;
     }
 
-    .line2{
-        width: 3%;
-        margin-right: -1.3rem;
+    .degree-img{
+        position: relative;
+        right: 5%;
+        width: 11.7rem;
     }
 
-    .line3{
-        width: 2.5%;
-        margin-right: 1.5rem;
+    .skills{
+        position: relative;
+        top: 26.5%;
     }
 
-    .line4{
-        width: 1.8%;
-        margin: 0.2rem -0.2rem 0.2rem 0.2rem;
+    .full-page-skills{
+        height: 75%;
     }
 
-    /* PROJECTS */
-
-    .video-animal-busters{
-        height: 106%;
-        width: 106%;
-        top: 8%;
-    }
-
-    .animal-busters-keywords-item1 {
-        font-size: 1.2em;
-    }
-
-    .animal-busters-keywords-item2 {
-        font-size: 1.2em;
+    .menu-content{
+        top: 5%;
     }
 
     .projects-menu{
-        width: 24%;
-        top: 49.5%;
+        width: 22.5rem;
+        height: 20.5rem;
+        top: 33.5%;
     }
 
     .animal-busters-p{
-        /*padding-top: 2rem;*/
-        font-size: 0.85em;
+        font-size: 0.93rem;
     }
 
-    .animal-busters-link{
-        font-size: 1.1em;
+    .animal-busters-icon{
+        width: 2.5%;
+        /*width: 2.2%;*/
     }
 
-    .animal-busters-icon {
-        width: 8px;
+    .menu-skills{
+        width: 12.5rem;
     }
 
-    /* PROJECTS */
+    .welcome-title{
+        font-size: 8.5rem;
+    }
 
-    /* MENU */
+    .divider{
+        font-size: 2em;
+    }
 
-    .menu-img{
-        width: 5.5rem;
+    .welcome-description{
+        font-size: 2.7rem;
+    }
+
+    .degree{
+        position: relative;
+        top: 0.5rem;
+    }
+
+    .menu-font-size {
+        font-size: 3.5em;
+    }
+
+    .menu {
+        height: 8.1rem;
+    }
+
+    .menu-width {
+        width: 5.8rem;
+    }
+
+    .contact-elements{
+        position: relative;
+        top: 35%;
+    }
+
+    .contact-img{
+        width: 15rem;
+    }
+
+    .icon-menu-1{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .icon-menu{
+        visibility: visible;
+        width: 2.9rem;
+        height: 2rem;
     }
 
     .icon-menu-close{
-        width: 41%;
+        width: 2.5rem;
+        height: 2.5rem;
     }
 
-    .main-title-letters-details{
-        font-size: 1.5rem;
+    .facebook-space{
+        left: 7rem;
+        bottom: 7rem;
     }
 
-    /* MENU */
-
-    .contact-social-img {
-        width: 3.9rem;
-        height: 3.9rem;
-    }
-
-}
-
-
-@media (max-height: 700px) {
-/*
-    .menu{
-        height: 125%;
-    }
-*/
-    .menu-content {
-        padding-top: 2.3rem;
-    }
-
-    .menu-font-size {
-        font-size: 3.2em;
-    }
-
-    .page-content {
-        padding-top: 27rem;
-    }
-
-    .welcome-title {
-        font-size: 7.8rem;
-    }
-
-    .welcome-description {
-        font-size: 2.5rem;
-    }
-
-    .menu-skills {
-        padding-top: 11.9rem;
-    }
-
-    .main-title-letters-details {
-        font-size: 1.2rem;
-    }
-
-    .skills-title {
-        top: 51.4%;
-        font-size: 2.5em;
-    }
-
-    .percentages {
-        padding-top: 27.5rem;
-    }
-
-    .wave-animation {
-        width: 8.5%;
-        height: 18vh;
-    }
-
-    .percentages-back {
-        bottom: 16.8vh;
-    }
-
-    .percentages-back-item {
-        min-width: 8.1%;
-        max-height: 16.6vh;
-    }
-/*
-    .skills-title-animator {
-        margin-left: -1.4rem;
-    }
-
-    .skills-title-end {
-        margin-right: -1rem;
-    }
-*/
-    .number-1 {
-        top: 0.5rem;
-    }
-
-    .number-2 {
-        top: -0.5rem;
-    }
-
-    .number-3 {
-        top: 0.5rem;
-    }
-
-    .percentage-number {
-        padding: 2.6rem 0 2.6rem 0;
-    }
-
-    .education {
-        font-size: 0.95em;
-    }
-
-    .sizeL {
-        font-size: 2.5em;
-    }
-
-    .degree-img {
-        width: 12%;
-    }
-
-    .full-page {
-        height: 131%;
-    }
-
-    .contact-elements {
-        padding-top: 27.3rem;
-    }
-
-    .contact-img {
-        width: 17.3%;
-    }
-/*
-    .contact-social-img {
-        width: 3.7rem;
-        height: 3.7rem;
-    }
-*/
-    .contact-link-span {
-        font-size: 1.9rem;
-    }
-
-    .contact-link{
-        top: 0.5rem;
+    .insta-space{
+        right: 7rem;
+        bottom: 7rem;
     }
 
     .social-media {
         bottom: 8rem;
     }
 
-    .animal-busters-p {
-        padding-top: 0.8rem;
-    }
-
-    .animal-busters-link:hover{
-        font-size: 1.19rem;
-    }
-
-}
-
-@media (max-width: 1280px) and (max-height: 689px) {
-
-    .menu{
-        height: 120%;
-    }
-
-    .menu-content {
-        padding-top: 2.3rem;
-    }
-
-    .menu-font-size {
-        font-size: 3.2em;
-    }
-
-    .page-content {
-        padding-top: 27rem;
-    }
-
-    .welcome-title {
-        font-size: 7.8rem;
-    }
-
-    .welcome-description {
-        font-size: 2.5rem;
-    }
-
-    .menu-skills {
-        padding-top: 11.9rem;
-    }
-
-    .main-title-letters-details {
-        font-size: 1.2rem;
-    }
-
-    .skills-title {
-        top: 49.4%;
-        font-size: 2.6em;
-    }
-
-    .percentages {
-        padding-top: 28rem;
-    }
-
-    .wave-animation {
-        width: 8.1%;
-    }
-
-    .percentages-back {
-        bottom: 16.6vh;
-    }
-
-    .percentages-back-item {
-        min-width: 8.1%;
-        max-height: 16.6vh;
-    }
-/*
-    .skills-title-animator {
-        margin-left: -1.4rem;
-    }
-
-    .skills-title-end {
-        margin-right: -1rem;
-    }
-*/
-    .number-1 {
-        top: 0.5rem;
-    }
-
-    .number-2 {
-        top: -0.5rem;
-    }
-
-    .number-3 {
-        top: 0.5rem;
-    }
-
-    .percentage-number {
-        padding: 2.6rem 0 2.6rem 0;
-    }
-
-    .education {
-        font-size: 0.95em;
+    .contact-link{
+        top: 1rem;
     }
 
     .sizeL {
-        font-size: 2.5em;
+        font-size: 3.15rem;
     }
 
-    .degree-img {
-        width: 12.5%;
+    .animal-busters-keywords-item1{
+        font-size: 1.5em;
     }
 
-    .full-page {
-        height: 131%;
+    .animal-busters-keywords-item2{
+        font-size: 1.5em;
     }
 
-    .contact-elements {
-        padding-top: 27.3rem;
+    .animal-busters-keywords{
+        font-size: 0.95rem;
     }
 
-    .contact-img {
-        width: 18.2%;
+    .contact-link-line{
+        height: 0.3rem;
     }
+}
 
-    .contact-social-img {
-        width: 3.7rem;
-        height: 3.7rem;
-    }
+@media (min-width: 1800px) {
 
-    .contact-link-span {
-        font-size: 1.9rem;
-    }
 
-    .contact-link{
-        top: 0.5rem;
-    }
-
-    .social-media {
-        bottom: 8rem;
-    }
-
-    .animal-busters-p {
-        padding-top: 2rem;
-    }
-
-    .animal-busters-link:hover{
-        font-size: 1.2rem;
-    }
 
 }
 
 
-/*
-
-1440 - 1680
-
- MEDIA QUERIES */
+ /*MEDIA QUERIES */
 
